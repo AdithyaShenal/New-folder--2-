@@ -1,0 +1,29 @@
+window.addEventListener("load", () => {
+  const pTypes = localStorage.getItem("P_TYPE");
+  const cType = localStorage.getItem("C_TYPE");
+  const weight = localStorage.getItem("WEIGHT");
+  const sType = localStorage.getItem("S_TYPE");
+  const packageCharges = localStorage.getItem("P_TYPE_CHARGES");
+  const courierCharges = localStorage.getItem("C_TYPE_CHARGES");
+  const weightCharges = localStorage.getItem("WEIGHT_CHARGES");
+  const serviceCharges = localStorage.getItem("S_TYPE_CHARGES");
+  const protectionCharges = localStorage.getItem("PROTECTION_CHARGES");
+  const protection = localStorage.getItem("PROTECTION");
+  const presentCharges = localStorage.getItem("PRESENT_CHARGES");
+  const present = localStorage.getItem("PRESENT");
+  const totalCharges = localStorage.getItem("TOTAL");
+
+  document.getElementById("selectedPackage").innerHTML = pTypes;
+  document.getElementById("selectedCourier").innerHTML = cType;
+  document.getElementById("selectedWeight").innerHTML = weight;
+  document.getElementById("selectedService").innerHTML = sType;
+  document.getElementById("selectedPackageCharges").innerHTML = packageCharges;
+  document.getElementById("selectedCourierCharges").innerHTML = courierCharges;
+  document.getElementById("selectedWeightCharges").innerHTML = weightCharges;
+  document.getElementById("selectedServiceCharges").innerHTML = serviceCharges;
+  document.getElementById("protectionCharges").innerHTML = protectionCharges;
+  document.getElementById("Protection").innerHTML = protection;
+  document.getElementById("presentCharges").innerHTML = presentCharges;
+  document.getElementById("Present").innerHTML = present;
+  document.getElementById("totalCharges").innerHTML = totalCharges;
+});

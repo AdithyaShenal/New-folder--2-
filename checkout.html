@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Checkout Page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script
+      src="https://kit.fontawesome.com/85b25705cd.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!---->
+    <nav class="nav">
+      <div class="nav-logo-container">
+        <a href="./index_logged.html"
+          ><img src="images/Logo-Small.webp" alt="" class="nav-logo"
+        /></a>
+      </div>
+      <img src="images/menu-burger.svg" class="nav-toggler collapsible" />
+      <ul class="nav-items collapsible-content">
+        <li class="nav-menu-button">
+          <span class="collapsible-item">Services</span>
+          <div class="nav-menu-button-dropdown collapsible-content-item">
+            <a href="services/sameday.html">Same-day Delivery</a>
+            <a href="services/overnight.html">Overnight Delivery</a>
+            <a href="services/routeservicing.html">Route Services</a>
+          </div>
+        </li>
+        <li class="nav-menu-button">
+          <span class="collapsible-item">Expertise</span>
+          <div class="nav-menu-button-dropdown collapsible-content-item">
+            <a href="./expertise/index.html">Refrigerated</a>
+            <a href="./expertise/index.html">Medical Courier</a>
+            <a href="./expertise/index.html">Air cargo</a>
+          </div>
+        </li>
+        <li class="nav-menu-button">
+          <span class="collapsible-item">Routes</span>
+          <div class="nav-menu-button-dropdown collapsible-content-item">
+            <a href="./routes/Colomo to Matara.html">Colombo to Matara</a>
+            <a href="./routes/Colombo to Jaffna.html">Colombo to Jaffna</a>
+            <a href="./routes/Colombo to batticaloa.html"
+              >Colombo to Batticalo</a
+            >
+          </div>
+        </li>
+        <li class="nav-menu-button">
+          <span class="collapsible-item">About us</span>
+          <div class="nav-menu-button-dropdown collapsible-content-item">
+            <a href="./about/whoweare.html">Who we are</a>
+            <a href="./about/whychooseus.html">Privacy & Policy</a>
+            <a href="./about/contactus.html">Contact us</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <form class="deliver-form" action="./checkout.php" method="post">
+      <h3>Invoice Summary</h3>
+      <table class="checkout-table">
+        <tbody>
+          <tr>
+            <td>Package Type</td>
+            <td id="selectedPackage"></td>
+            <td id="selectedPackageCharges"></td>
+          </tr>
+
+          <tr>
+            <td>Courier Type</td>
+            <td id="selectedCourier"></td>
+            <td id="selectedCourierCharges"></td>
+          </tr>
+
+          <tr>
+            <td>Weight Range</td>
+            <td id="selectedWeight"></td>
+            <td id="selectedWeightCharges"></td>
+          </tr>
+
+          <tr>
+            <td>Service Type</td>
+            <td id="selectedService"></td>
+            <td id="selectedServiceCharges"></td>
+          </tr>
+
+          <tr>
+            <td>Protection Wrapping</td>
+            <td id="Protection"></td>
+            <td id="protectionCharges"></td>
+          </tr>
+
+          <tr>
+            <td>Present Wrapping</td>
+            <td id="Present"></td>
+            <td id="presentCharges"></td>
+          </tr>
+        </tbody>
+        <tfoot class="checkout-summary">
+          <td colspan="2"><b>Total</b></td>
+          <td id="totalCharges"></td>
+        </tfoot>
+      </table>
+      <input
+        class="payment_buttons"
+        type="submit"
+        name="payment"
+        value="Online Payments"
+      />
+      <input
+        class="payment_buttons"
+        type="submit"
+        name="payment"
+        value="Cash Payment"
+      />
+    </form>
+
+    <div class="deliver-form">
+      <h3>Terms and Policies</h3>
+      <p>
+        By placing an order, you agree to our
+        <a href="terms-and-conditions.html">Terms and Conditions</a> and
+        <a href="privacy-policy.html">Privacy Policy</a>. Please review these
+        documents to understand your rights and responsibilities.
+      </p>
+      <hr />
+      <h3>Customer Support</h3>
+      <p>
+        If you have any questions or need assistance with your order, please
+        contact our customer support team at:
+      </p>
+      <ul>
+        <li>Email: support@example.com</li>
+        <li>Phone: 1-800-123-4567</li>
+        <li>Live Chat: Available 24/7 on our website</li>
+      </ul>
+      <hr />
+      <h3>Frequently Asked Questions</h3>
+      <ul>
+        <li>Can I track my order?</li>
+        <p>
+          Yes, once your order is shipped, you will receive a tracking number
+          via email to monitor the delivery status.
+        </p>
+
+        <li>What if my package is damaged?</li>
+        <p>
+          If your package arrives damaged, please contact our customer support
+          team immediately for assistance.
+        </p>
+      </ul>
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+      <div class="footer-container">
+        <p>Follow Us On:</p>
+        <div class="footer-media-ref">
+          <i class="fa-brands fa-square-facebook fa-2xl"></i>
+          <i class="fa-brands fa-square-instagram fa-2xl"></i>
+          <i class="fa-brands fa-square-whatsapp fa-2xl"></i>
+          <i class="fa-brands fa-square-x-twitter fa-2xl"></i>
+        </div>
+      </div>
+      <div>
+        <p>&copy;2024 Flash (PVT) LTD, All Rights Reserved</p>
+        <a href="./about/whychooseus.html">Terms & Policy</a><span> | </span
+        ><a href="./about/whoweare.html">About Us</a> <span> | </span
+        ><a href="mailto:washenal55@gmail.com">Send email</a>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <script src="./checkout.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
