@@ -132,8 +132,12 @@ function validation() {
   const cType = document.getElementById("courierType").value;
   const weight = document.getElementById("weight").value;
   const sType = document.getElementById("serviceType").value;
-  const protectionWrap = document.getElementById("Protection").value;
-  const presentWrap = document.getElementById("Decoratings").value;
+  const protectionWrap = document.getElementById("Protection").checked
+    ? "YES"
+    : "NO";
+  const presentWrap = document.getElementById("Decoratings").checked
+    ? "YES"
+    : "NO";
 
   // Initialize charges
   let pTypeCharges = 0;
