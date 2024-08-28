@@ -1266,65 +1266,6 @@ a {
   background-color: #ee3743;
 }
 
-/*  My profile page */
-
-.profile-container {
-  width: 80%;
-  border: 1px solid black;
-  padding: 2rem;
-  margin: 2rem auto;
-  background-color: #f6f5f2;
-}
-
-.profile-button-container {
-  display: flex; /* Use flexbox for responsive alignment */
-  gap: 1rem; /* Adds space between the buttons */
-  flex-wrap: wrap; /* Allows buttons to wrap on smaller screens */
-  width: 100%;
-  margin: 2rem 0;
-}
-
-.profile-button,
-.history-button {
-  text-align: center; /* Centers the text inside the button */
-  padding: 1rem; /* Adds padding for better button size */
-  cursor: pointer; /* Changes the cursor to a pointer for better UX */
-  flex: 1 1 45%; /* Responsive width: grows, shrinks, and has a base width */
-  max-width: 150px; /* Sets a maximum width for buttons */
-  background-color: #e8505b;
-  border-radius: 5px; /* Optional: Rounds the corners */
-  margin: 0.5rem 0; /* Adds vertical margin for spacing */
-}
-
-.profile-button-container a {
-  color: white;
-}
-
-@media (max-width: 600px) {
-  .profile-button,
-  .history-button {
-    flex: 1 1 100%;
-    max-width: 100%;
-  }
-}
-
-.profile-info-container {
-  margin-top: 5rem;
-}
-
-.profile-info-table {
-  width: 100%;
-}
-
-.profile-info-table input {
-  font-size: 1.7rem;
-  margin: 1px 1px;
-}
-
-.profile-info-table td {
-  padding: 2rem 0;
-}
-
 /* Client Dashboard */
 
 .client-container {
@@ -1449,7 +1390,7 @@ a {
   }
 }
 
-/* New  */
+/*  My profile page */
 
 .profile-container,
 .profile-picture-container,
@@ -1484,4 +1425,73 @@ a {
 
 .form-group {
   margin-bottom: 15px;
+}
+
+.profile-container {
+  width: 80%;
+  border: 1px solid black;
+  padding: 2rem;
+  margin: 2rem auto;
+  background-color: #f6f5f2;
+}
+
+.profile-button-container {
+  display: flex; /* Use flexbox for responsive alignment */
+  gap: 1rem; /* Adds space between the buttons */
+  flex-wrap: wrap; /* Allows buttons to wrap on smaller screens */
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.profile-button,
+.history-button {
+  text-align: center; /* Centers the text inside the button */
+  padding: 1rem; /* Adds padding for better button size */
+  cursor: pointer; /* Changes the cursor to a pointer for better UX */
+  flex: 1 1 45%; /* Responsive width: grows, shrinks, and has a base width */
+  max-width: 150px; /* Sets a maximum width for buttons */
+  background-color: #e8505b;
+  border-radius: 5px; /* Optional: Rounds the corners */
+  margin: 0.5rem 0; /* Adds vertical margin for spacing */
+}
+
+.profile-button-container a {
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .profile-button,
+  .history-button {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .profile-info-table td {
+    display: block; /* Stack table cells */
+    width: 100%; /* Full width for better display on mobile */
+    padding: 0.5rem 0; /* Adjust padding */
+  }
+
+  .profile-info-table input,
+  .profile-info-table textarea {
+    width: 100%; /* Full width inputs */
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+}
+
+.profile-info-container {
+  margin-top: 5rem;
+}
+
+.profile-info-table {
+  width: 100%;
+}
+
+.profile-info-table input {
+  font-size: 1.7rem;
+  margin: 1px 1px;
+}
+
+.profile-info-table td {
+  padding: 2rem 0;
 }
