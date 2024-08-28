@@ -731,7 +731,7 @@ a {
 
 .btn {
   display: inline-block;
-  padding: 1rem 3rem;
+  padding: 1rem 2rem;
   font-size: 1.8rem;
   border: none;
   border-radius: 15rem;
@@ -795,7 +795,13 @@ a {
 }
 
 .btn-order {
-  background: #f52549;
+  transition: 0.3s ease;
+  border: 1px solid #e8505b;
+  color: #e8505b;
+}
+
+.btn-order:hover {
+  background: #f13151;
   color: white;
 }
 
@@ -1287,16 +1293,14 @@ a {
   width: 100%;
 }
 
+.client-grid-1-header {
+  margin-left: 3rem;
+}
+
 .client-grid-2 {
   width: 100%;
   box-sizing: border-box;
   height: 100vh;
-}
-
-@media screen and (max-width: 768px) {
-  .client-container {
-    grid-template-columns: 1fr;
-  }
 }
 
 .client-hero-header {
@@ -1309,6 +1313,14 @@ a {
 }
 
 @media screen and (max-width: 768px) {
+  .client-container {
+    grid-template-columns: 1fr;
+  }
+
+  .client-grid-1-header {
+    font-size: 2rem;
+  }
+
   .client-hero-header {
     font-size: 2rem;
   }
@@ -1338,7 +1350,7 @@ a {
 .client-options {
   display: flex;
   flex-wrap: wrap;
-  margin: 5rem 0;
+  margin: 2rem 0;
 }
 
 .client-option-cards {
@@ -1379,8 +1391,8 @@ a {
 
 @media screen and (max-width: 768px) {
   .client-option-cards {
-    margin: 3rem 3rem;
-    width: 25rem;
+    margin: 3rem auto;
+    width: 26rem;
   }
 
   .card-body {
