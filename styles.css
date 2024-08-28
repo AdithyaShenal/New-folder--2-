@@ -1209,6 +1209,13 @@ a {
   padding: 2rem;
 }
 
+@media screen and (max-width: 768px) {
+  .checkout-table td {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+  }
+}
+
 .checkout-summary {
   background-color: rgba(255, 0, 0, 0.068);
 }
@@ -1436,23 +1443,23 @@ a {
 }
 
 .profile-button-container {
-  display: flex; /* Use flexbox for responsive alignment */
-  gap: 1rem; /* Adds space between the buttons */
-  flex-wrap: wrap; /* Allows buttons to wrap on smaller screens */
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
   width: 100%;
   margin: 2rem 0;
 }
 
 .profile-button,
 .history-button {
-  text-align: center; /* Centers the text inside the button */
-  padding: 1rem; /* Adds padding for better button size */
-  cursor: pointer; /* Changes the cursor to a pointer for better UX */
-  flex: 1 1 45%; /* Responsive width: grows, shrinks, and has a base width */
-  max-width: 150px; /* Sets a maximum width for buttons */
+  text-align: center;
+  padding: 1rem;
+  cursor: pointer;
+  flex: 1 1 45%;
+  max-width: 150px;
   background-color: #e8505b;
-  border-radius: 5px; /* Optional: Rounds the corners */
-  margin: 0.5rem 0; /* Adds vertical margin for spacing */
+  border-radius: 5px;
+  margin: 0.5rem 0;
 }
 
 .profile-button-container a {
@@ -1467,15 +1474,15 @@ a {
   }
 
   .profile-info-table td {
-    display: block; /* Stack table cells */
-    width: 100%; /* Full width for better display on mobile */
-    padding: 0.5rem 0; /* Adjust padding */
+    display: block;
+    width: 100%;
+    padding: 0.5rem 0;
   }
 
   .profile-info-table input,
   .profile-info-table textarea {
-    width: 100%; /* Full width inputs */
-    font-size: 1rem; /* Adjust font size for smaller screens */
+    width: 100%;
+    font-size: 1rem;
   }
 }
 
